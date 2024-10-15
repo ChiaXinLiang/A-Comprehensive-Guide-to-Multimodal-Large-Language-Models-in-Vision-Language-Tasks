@@ -287,7 +287,7 @@ Finally, the decoder generates outputs based on the fused multimodal representat
 \\
 MLLMs typically rely on the Transformer architecture, which uses self-attention to understand the relationships between data elements, whether they are words or image patches. The Transformer model’s ability to handle sequential and parallel information makes it ideal for multimodal tasks.
 
-The Transformer architecture, introduced by Vaswani et al. (2017), serves as the fundamental backbone for MLLMs, providing a powerful mechanism for processing both textual and visual information. This architecture's core strength lies in its self-attention mechanism, which allows the model to dynamically focus on relevant parts of the input, regardless of their position in the sequence.
+The Transformer architecture, introduced by \cite{vaswani2017attention}, serves as the fundamental backbone for MLLMs, providing a powerful mechanism for processing both textual and visual information. This architecture's core strength lies in its self-attention mechanism, which allows the model to dynamically focus on relevant parts of the input, regardless of their position in the sequence.
 
 MLLMs benefit greatly from the Transformer's versatility. Multimodal tasks benefit from its ability to handle both sequential and parallel data (like text). In order to understand the nuanced relationships between visual and textual elements, the self-attention mechanism allows the model to capture long-range dependencies and complex relationships.
 
@@ -371,7 +371,7 @@ Vision Encoders and Language Decoders are fundamental components of MLLMs, servi
 
 Vision Encoders are responsible for extracting salient features from visual inputs. Traditionally, Convolutional Neural Networks (CNNs) have been the predominant architecture for this task. CNNs excel at capturing hierarchical visual features, from low-level edges and textures to high-level semantic concepts. Notable CNN architectures employed in MLLMs include ResNet, Inception, and EfficientNet. These networks typically consist of multiple convolutional layers, pooling operations, and non-linear activations, culminating in a dense representation of the input image.
 
-More recently, Vision Transformers (ViT) have emerged as a powerful alternative to CNNs for visual encoding. Introduced by Dosovitskiy et al. (2020), ViTs adapt the transformer architecture, originally designed for sequence modeling, to image processing. In a ViT, an image is divided into fixed-size patches, which are linearly embedded and treated as a sequence of tokens. This approach leverages the self-attention mechanism to capture global dependencies in the image, potentially offering advantages over the local receptive fields of CNNs.
+More recently, Vision Transformers (ViT) have emerged as a powerful alternative to CNNs for visual encoding. Introduced by \cite{dosovitskiy2020image}, ViTs adapt the transformer architecture, originally designed for sequence modeling, to image processing. In a ViT, an image is divided into fixed-size patches, which are linearly embedded and treated as a sequence of tokens. This approach leverages the self-attention mechanism to capture global dependencies in the image, potentially offering advantages over the local receptive fields of CNNs.
 
 The output of the Vision Encoder is typically a set of feature vectors or a single aggregated vector representing the entire image. This representation is then projected into a shared embedding space that is compatible with the textual representations.
 
