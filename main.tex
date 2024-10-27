@@ -1,22 +1,63 @@
-\documentclass{book}
+%\documentclass{book}
+\documentclass[letterpaper, oneside]{memoir}
+\setulmarginsandblock{3cm}{3cm}{*}
+\setlrmarginsandblock{3cm}{3cm}{*}
+\checkandfixthelayout
+
 \usepackage{hyperref}
 \usepackage{natbib}
 \usepackage{graphicx}
 \usepackage{amsmath}
 \usepackage{xcolor}
 \usepackage[sectionbib]{chapterbib}
+
+\usepackage{tikz}
+\usepackage{fontawesome5}
+\usetikzlibrary{positioning}
+
+
+
 \title{A Comprehensive Guide to Multimodal Large Language Models in Vision-Language Tasks}
-\author{(draft)Marcus, Pu Tian, Caitlyn, wittz, deviser, Li Ming, Wei An}
+
+\author{
+    Chia Xin Liang \\ \texttt{cxldun@gmail.com} \\ JTB Technology Corp. \\
+    \and
+    Pu Tian \\ \texttt{pu.tian@stockton.edu} \\ Stockton University \\
+    \and
+    Caitlyn Heqi Yin \\ \texttt{hyin66@wisc.edu} \\ University of Wisconsin-Madison \\
+    \and
+    Yao Yua \\ \texttt{yaoyuanou@gmail.com} \\ Independent Researcher \\
+    \and
+    Wei An-Hou \\ \texttt{weian312@gmail.com} \\ Nomad Sustaintech LTD \\
+    \and
+    Li Ming \\ \texttt{mli694@gatech.edu} \\ Georgia Institute of Technology \\
+    \and
+    Tianyang Wang \\ \texttt{tianyangwang0305@gmail.com} \\ University of Liverpool \\
+    \and
+    Ziqian Bi \\
+    \texttt{bi32@purdue.edu} \\ Purdue University \\
+    \and
+    Ming Liu \\
+        \texttt{mliu3083@purdue.edu} \\ Purdue University 
+}
 
 \begin{document}
 
-
+\date{}
 \maketitle
+
+\begin{abstract}
+    This comprehensive book explores the rapidly evolving field of Multimodal Large Language Models (MLLMs), examining their architecture, applications, and implications for artificial intelligence. Beginning with foundational concepts, the text delves into how MLLMs integrate diverse data types—including text, images, videos, and audio—to create more sophisticated AI systems capable of cross-modal understanding. The book covers essential topics such as training methodologies, architectural components, and practical applications across various domains, from visual storytelling to accessibility enhancement. Through detailed case studies and technical analyses, it examines prominent MLLM implementations while addressing critical challenges in scalability, robustness, and cross-modal learning. The work concludes with thoughtful discussions on ethical considerations, responsible AI development, and future directions in the field, making it an invaluable resource for researchers, practitioners, and students interested in the intersection of natural language processing and computer vision. This authoritative guide provides both theoretical frameworks and practical insights into one of AI’s most transformative technologies, offering a balanced perspective on both the opportunities and challenges that lie ahead in MLLM development and deployment.
+\end{abstract}
+\newpage
+
 \tableofcontents
+
+
 
 \include{chapter1/chapter1}  
 \include{chapter2/chapter2}  
-\include{chapter3/chapter3}  
+%\include{chapter3/chapter3}  
 \include{chapter4/chapter4}  
 \include{chapter5/chapter5}  
 \include{chapter6/chapter6}  
@@ -25,4 +66,6 @@
 \include{chapter9/chapter9}  
 
 
-\end{document} 
+
+ 
+\end{document}

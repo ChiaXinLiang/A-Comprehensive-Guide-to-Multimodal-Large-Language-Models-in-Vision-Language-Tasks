@@ -3,7 +3,7 @@
 \chapterauthor{Wei An}
 
 
-Training Multimodal Large Language Models (MLLMs) is a complex process that typically involves a combination of large-scale pre-training and task-specific fine-tuning. In this chapter, we will explore the various strategies employed during the pre-training phase, the importance of fine-tuning for specific tasks, and the role of advanced techniques such as few-shot and zero-shot learning. Additionally, we will delve into instruction tuning, a recent approach that enhances MLLMs' ability to follow human-like instructions across multiple modalities.
+Training Multimodal Large Language Models (MLLMs) is a complex process that typically involves a combination of large-scale pre-training and task-specific fine-tuning \cite{caffagni2024r}. In this chapter, we will explore the various strategies employed during the pre-training phase, the importance of fine-tuning for specific tasks, and the role of advanced techniques such as few-shot and zero-shot learning. Additionally, we will delve into instruction tuning, a recent approach that enhances MLLMs' ability to follow human-like instructions across multiple modalities.
 
 \section{Pre-Training Strategies}
 
@@ -11,7 +11,7 @@ MLLMs are based on pre-training. It involves training the model on vast multimod
 
 \subsection{Contrastive Learning (CLIP, ALIGN)}
 
-Contrastive learning is a key method in training multimodal large language models (MLLMs). Here are some important methods and insights related to contrastive learning in this context:
+Contrastive learning is a key method in training multimodal large language models (MLLMs) \cite{zhang2024mm}. Here are some important methods and insights related to contrastive learning in this context:
 
 \textbf{Basic Concept}: Contrastive learning involves training models to differentiate between similar and dissimilar pairs of data. In the case of MLLMs, this often means aligning text and image pairs while distinguishing them from mismatched pairs. This approach helps in creating shared embedding spaces for different modalities, which is crucial for tasks like cross-modal retrieval \cite{cite4}.
 
@@ -97,6 +97,14 @@ Fine-tuning is essential for tasks that require the model to reason across modal
 
 Fine-tuning is essential for tasks that require the model to reason across modalities, such as cross-modal retrieval or referring expression comprehension, where the model must identify specific objects in an image based on a text description. The goal during this phase is to effectively align the visual and textual representations \cite{CrossModalTasks2024}.
 
+\textbf{Fine-tuning strategies} 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{chapter4/Fine_tuning_strategies.png}
+    \caption{Fine-tuning strategies}
+    \label{fig:Fine-tuning}
+\end{figure}
+
 \section{Few-Shot and Zero-Shot Learning in MLLMs}
 
 Few-shot and zero-shot learning have become powerful capabilities of Multimodal Large Language Models (MLLMs), allowing them to generalize to new tasks with little to no task-specific data. This is particularly valuable when labeled datasets are scarce or expensive to curate \cite{FewShotZeroShotLearning2024}.
@@ -136,6 +144,14 @@ Instruction-tuned MLLMs are particularly useful in interactive AI systems, where
 
 Instruction-tuned models enhance the capabilities of personal assistants by allowing them to understand and execute complex user instructions. This includes managing schedules, setting reminders, and even controlling smart home devices through natural language commands \cite{LarkSuite}.
 
+\textbf{Instruction Tuning for MLLMs} 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{chapter4/Instruction_Tuning_for_MLLMs.png}
+    \caption{Instruction Tuning for MLLMs}
+    \label{fig:Fine-tuning}
+\end{figure}
+
 In customer service, instruction-tuned models can handle a wide range of queries by understanding and responding to customer instructions with high accuracy \cite{OpenAICommunity}.
 
 Instruction-tuned models are also valuable in creative domains, such as generating art, stories, or music based on user prompts \cite{RohitAggarwal}.
@@ -143,5 +159,6 @@ Instruction-tuned models are also valuable in creative domains, such as generati
 These models can be used in educational tools to provide personalized learning experiences \cite{RedditExperience}.
 
 In software development, instruction-tuned models can assist in code generation and debugging by following developer instructions \cite{RohitAggarwal}.
-\bibliographystyle{plain}
+
+\bibliographystyle{unsrt}
 \bibliography{chap4_ref}

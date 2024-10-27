@@ -25,12 +25,12 @@ The key features and importance of MLLMs include:
     \item \textbf{Multimodal Content Creation:} MLLMs facilitate the creation of content that integrates text, visuals, and audio, such as illustrated stories or multimedia presentations. This could involve generating a coherent story with matching illustrations based on a brief prompt.
 \end{itemize}
 
-\textbf{Unified Representation:} MLLMs generate integrated representations of multimodal data, allowing for fluid transitions between different data types. This unified approach is technically challenging but significant because it enables:
+\textbf{Unified Representation:} MLLMs achieve integrated representations of multimodal data through unified codebooks and joint embedding spaces, enabling seamless processing across different modalities. This architectural approach offers several key capabilities:
 
 \begin{itemize}
-    \item Seamless translation between modalities (e.g., describing a photograph or generating an image from text)
-    \item Cross-modal retrieval, where the model can find relevant images based on text queries or match sounds with visual content
-    \item More natural and intuitive interactions between humans and AI systems
+    \item Seamless translation between modalities (e.g., describing a photograph or generating an image from text).
+    \item Cross-modal retrieval, where the model can find relevant images based on text queries or match sounds with visual content.
+    \item More natural and intuitive interactions between humans and AI systems.
 \end{itemize}
 
 To understand unified representation, imagine a library where books, images, and audio recordings are all cataloged using the same system, allowing you to easily find related items across different media types.
@@ -46,11 +46,11 @@ To understand unified representation, imagine a library where books, images, and
 \textbf{Generalization Across Modalities:} MLLMs demonstrate flexibility in handling various tasks across different modalities, including:
 
 \begin{itemize}
-    \item Image captioning and visual question answering
-    \item Cross-modal retrieval and content generation
-    \item Audio-visual integration for tasks like video subtitling or lip-syncing
-    \item Multimodal translation, such as converting a video into a textual summary
-    \item Enhanced human-computer interaction through simultaneous interpretation of gestures, facial expressions, speech, and text
+    \item Image captioning and visual question answering.
+    \item Cross-modal retrieval and content generation.
+    \item Audio-visual integration for tasks like video subtitling or lip-syncing.
+    \item Multimodal translation, such as converting a video into a textual summary.
+    \item Enhanced human-computer interaction through simultaneous interpretation of gestures, facial expressions, speech, and text.
 \end{itemize}
 
 \textbf{Advancements in Robotics and Embodied AI:} In robotics, MLLMs contribute to systems that can perceive and interact with their environment more effectively. By processing visual, auditory, and sensory data, robots powered by MLLMs can perform complex tasks such as object manipulation, navigation, and human-robot interaction. For instance, a household robot could understand and execute a verbal command like "Please bring me the red mug from the kitchen counter," by combining language understanding with visual recognition and spatial navigation.
@@ -75,6 +75,32 @@ The fusion of natural language processing (NLP) and computer vision has been a g
     \item \textbf{Vision-Language Transformers (2019-Present):} Models like ViLBERT, CLIP, and DALL-E demonstrated that transformer architectures could be extended to multimodal applications. These models can perform tasks like generating images from text descriptions or finding the most relevant image for a given text query.
 \end{itemize}
 
+\begin{center}
+\begin{tikzpicture}[scale=1, transform shape]
+    % Draw the timeline line
+    \draw[thick] (0,0) -- (14,0);
+
+    % Image Captioning (2015-Present)
+    \node[fill=blue!20, rounded corners, text width=3cm, align=center, above=1cm] at (2,0) {\textbf{Image Captioning}\\(2015-Present)};
+    \node[fill=gray!10, text width=4.5cm, rounded corners, below=1.5cm] at (2,0) {\faCameraRetro\quad CNNs and RNNs allow models to ``describe" images};
+    \draw[thick] (2, -0.3) -- (2, 0.3); % Year marker for 2015
+    \node[below=0.7cm] at (2, 0) {2015};
+
+    % Visual Question Answering
+    \node[fill=green!20, rounded corners, text width=3cm, align=center, above=1cm] at (7,0) {\textbf{Visual Question Answering}};
+    \node[fill=gray!10, text width=4.5cm, rounded corners, below=1.5cm] at (7,0) {\faQuestion\quad Models answer questions like ``What color is the car?"};
+    \draw[thick] (7, -0.3) -- (7, 0.3); % Year marker for VQA period
+    \node[below=0.7cm] at (7, 0) {2016 - 2018};
+
+    % Vision-Language Transformers (2019-Present)
+    \node[fill=orange!20, rounded corners, text width=3.5cm, align=center, above=1cm] at (12,0) {\textbf{Vision-Language Transformers}\\(2019-Present)};
+    \node[fill=gray!10, text width=4.5cm, rounded corners, below=1.5cm] at (12,0) {\faRobot\quad Transformers enable multimodal tasks like text-to-image generation};
+    \draw[thick] (12, -0.3) -- (12, 0.3); % Year marker for 2019
+    \node[below=0.7cm] at (12, 0) {2019};
+
+\end{tikzpicture}
+\end{center}
+
 \textbf{Theoretical Foundations:}
 The convergence of NLP and computer vision is built on several key theoretical foundations:
 
@@ -86,6 +112,14 @@ The convergence of NLP and computer vision is built on several key theoretical f
     \item \textbf{Attention Mechanisms:} Originally developed for NLP, attention mechanisms allow models to focus on relevant parts of inputs. In MLLMs, this extends to focusing on relevant aspects across different modalities, enabling more effective processing of multimodal data. You can think of this as similar to how humans focus on a speaker's lips when trying to understand speech in a noisy environment.
 \end{itemize}
 
+\textbf{Key Component of AI Theory} 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.6\linewidth]{chapter1/keycomponentofai.png}
+    \caption{Key Component of AI Theory}
+    \label{fig:transformer}
+\end{figure}
+
 \textbf{Architectural Innovations:}
 Several key architectural innovations have enabled the development of MLLMs:
 
@@ -96,7 +130,6 @@ Several key architectural innovations have enabled the development of MLLMs:
     
     \item \textbf{Vision Transformers (ViT):} These apply transformer architectures directly to image patches, enabling more seamless integration of vision and language models. Instead of processing an image as a whole, ViT breaks it down into smaller patches and processes them sequentially, much like how transformers process words in a sentence.
 \end{itemize}
-
 
 \textbf{Impact on AI Applications:}
 The convergence of NLP and computer vision through MLLMs has enabled new capabilities in various AI applications:

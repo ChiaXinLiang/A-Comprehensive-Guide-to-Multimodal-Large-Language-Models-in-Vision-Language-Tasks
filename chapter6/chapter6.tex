@@ -15,7 +15,7 @@ In addition to identifying lessons learned, the case studies help establish best
 
 Finally, these case studies explore the economic impact and market potential of MLLMs, extending beyond purely technical considerations. As MLLMs become more integral to various industries, they are opening up new market opportunities while simultaneously disrupting traditional business models. The scaling of autoregressive models for content-rich text-to-image generation \cite{yu2022scaling} showcases the potential for MLLMs to revolutionize content creation industries.
 
-By examining prominent MLLMs through these various real-world applications, technological advancements, lessons learned, best practices, and economic impact—we provide a view of their current state, future potential, and the challenges that lie ahead. This comprehensive approach enables us to better anticipate future developments in the field and to prepare for the evolving landscape of multimodal AI technologies, as demonstrated by the generative pretraining from pixels \cite{chen2023generative} and other cutting-edge research.
+By examining prominent MLLMs through these various real-world applications, technological advancements, lessons learned, best practices, and economic impact—we provide a view of their current state, future potential, and the challenges that lie ahead. This comprehensive approach enables us to better anticipate future developments in the field and to prepare for the evolving landscape of multimodal AI technologies, as demonstrated by the generative pretraining from pixels and other cutting-edge research \cite{chen2023generative}.
 
 
 \section{Case Studies}
@@ -30,11 +30,19 @@ Midjourney \cite{Midjourney} has emerged as a leading AI-driven art generator, k
 
 One of Midjourney's key advantages is its ability to generate images with a strong sense of mood and atmosphere. Whether tasked with creating surreal dreamscapes or highly detailed portraits, Midjourney produces visually cohesive works that rival human creativity. The model's flexibility in generating a wide range of styles—from photorealism to abstract art—has made it a popular tool for those looking to explore new aesthetic possibilities.
 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{chapter6/DALLE.png}
+    \caption{DALL-E 3}
+    \label{fig:DALLE3}
+\end{figure}
 \subsubsection{DALL-E 3}
 
 OpenAI's DALL-E 3 \cite{DALLE3} represents the latest iteration in the DALL-E series, pushing the boundaries of text-to-image generation by integrating directly with ChatGPT, OpenAI's conversational agent. This integration allows users to create images through an interactive, conversational process, making the experience more accessible and intuitive for non-expert users. DALL-E 3 is known for its high accuracy in interpreting complex and detailed text prompts, often producing images that align closely with user expectations.
 
+
 DALL-E 3's versatility allows it to generate a wide range of image types, from abstract art to photorealistic renderings. Its ability to understand nuanced language means it can generate highly specific images based on user descriptions, making it an invaluable tool for industries such as advertising, marketing, and media production, where visual accuracy and creativity are key. Furthermore, the seamless integration with ChatGPT enhances the user experience, allowing for iterative adjustments and refinements to the images as users provide feedback.
+
 
 \subsubsection{Stable Diffusion}
 
@@ -42,21 +50,43 @@ Stable Diffusion \cite{StableDiffusion} is a widely recognized open-source text-
 
 Stable Diffusion's ability to run on consumer-grade hardware, combined with its powerful image generation capabilities, makes it accessible to a broad range of users. It has become a popular tool for creating digital art, generating concept designs, and even developing synthetic datasets for AI research. The open-source community surrounding Stable Diffusion continues to drive its evolution, making it a highly adaptable and versatile solution for image generation across industries.
 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{chapter6/Stable_diffusion.png}
+    \caption{Stable Diffusion}
+    \label{fig:Stable_diffusion}
+\end{figure}
+
 \subsubsection{Imagen}
 
 Google's Imagen \cite{Imagen} stands out as one of the most advanced text-to-image diffusion models, delivering exceptional quality and detail in the images it generates. Based on a diffusion process that progressively refines an image from noise, Imagen is capable of producing highly realistic visuals that often surpass the fidelity of outputs from other models. Its strengths lie in handling fine-grained details, making it particularly useful for professional applications such as architecture, product design, and media production.
 
 Imagen's ability to generate coherent and contextually appropriate visuals from complex prompts makes it a valuable tool in fields that demand high accuracy in visual representation. The model is also integrated with Google's broader AI ecosystem, enhancing its applicability across different domains and further reinforcing its role in pushing the boundaries of image generation technology.
 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{chapter6/imagen.png}
+    \caption{Imagen 3}
+    \label{fig:Imagen}
+\end{figure}
+
 \subsubsection{Flux.1}
 
-Flux.1 is a cutting-edge MLLM specifically designed for ultra-high-resolution image generation and editing. Developed with a focus on interactive creativity, Flux.1 allows users to generate and manipulate visuals with unparalleled control over the image-making process. One of the standout features of Flux.1 is its ability to create images with extremely fine detail, making it ideal for industries that require high precision, such as fashion design, digital content creation, and architectural visualization.
+Flux.1 \cite{fei2024flux} is a cutting-edge MLLM specifically designed for ultra-high-resolution image generation and editing. Developed with a focus on interactive creativity, Flux.1 allows users to generate and manipulate visuals with unparalleled control over the image-making process. One of the standout features of Flux.1 is its ability to create images with extremely fine detail, making it ideal for industries that require high precision, such as fashion design, digital content creation, and architectural visualization.
 
 Flux.1 integrates an advanced feedback loop, where users can refine generated images based on iterative prompts. This interactivity gives users granular control over the composition, style, and details of the images, allowing them to guide the creative process more actively. This capability makes Flux.1 particularly appealing to professionals who need to visualize specific concepts with high accuracy, such as designers working on product prototypes or artists creating concept art for visual media.
 
 Additionally, Flux.1 is designed to handle large-scale images, making it suitable for producing billboard advertisements, large-scale artwork, or other high-resolution formats that require exceptional clarity. Its ability to generate both realistic and highly stylized visuals also expands its use cases, offering solutions across industries that rely on visual creativity and high-quality imagery. Flux.1's focus on high-resolution output and interactive user feedback sets it apart from other MLLMs, positioning it as a leader in both technical sophistication and user-driven creative processes.
 
 Together, these models demonstrate a wide range of capabilities in the field of image generation, driven by advances in multimodal AI. Whether through the creative flexibility of Midjourney, the intuitive conversational interface of DALL-E 3, the open-source versatility of Stable Diffusion, the high-fidelity visuals of Imagen, or the ultra-high-resolution focus of Flux.1, these case studies showcase how MLLMs are reshaping the future of visual content creation. Each model contributes uniquely to industries that depend on high-quality, innovative imagery, while collectively pushing the boundaries of what is possible in AI-driven art and design.
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{chapter6/FLEX1.png}
+    \caption{Flux.1 AI}
+    \label{fig:FLEX}
+\end{figure}
 
 \subsection{Code Generation}
 
@@ -68,11 +98,27 @@ GitHub Copilot \cite{GitHubCopilot} has become one of the most widely used AI-po
 
 What sets GitHub Copilot apart is its ability to understand the context of the code being written. It provides not only line-by-line completions but also larger code blocks based on the developer's description or prior code. By analyzing both code syntax and semantics, GitHub Copilot helps developers by suggesting entire functions, methods, or even classes based on natural language descriptions, enabling more efficient coding workflows.
 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{chapter6/copilot.png}
+    \caption{Copilot}
+    \label{fig:Copilot}
+\end{figure}
+
 \subsubsection{Amazon CodeWhisperer}
 
 Amazon's CodeWhisperer \cite{AmazonCodeWhisperer} is an AI-powered code generation tool designed to assist developers in writing secure, efficient code across multiple IDEs. CodeWhisperer focuses not only on code generation but also on promoting best practices, including security-aware coding. By providing real-time suggestions that are contextually relevant, CodeWhisperer helps developers reduce potential security vulnerabilities, such as improper input handling or insecure API usage.
 
 What makes CodeWhisperer stand out is its emphasis on writing safe and secure code. As part of Amazon Web Services (AWS), CodeWhisperer is particularly useful for developers building cloud-based applications, providing suggestions that follow AWS's security best practices. It supports a wide range of programming languages and integrates well with IDEs like IntelliJ IDEA, PyCharm, and Visual Studio Code.
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.7\linewidth]{chapter6/amazon.png}
+    \caption{Amazon}
+    \label{fig:Amazon}
+\end{figure}
 
 \subsubsection{Tabnine}
 
@@ -100,7 +146,7 @@ Codeium offers real-time code completion and generation, along with suggestions 
 
 \subsubsection{Cursor}
 
-Cursor is an AI-powered code editor built on Visual Studio Code that offers a range of advanced features, including code completion, refactoring, and natural language-to-code translation. Cursor allows developers to input natural language descriptions of code, which it then translates into functional programming constructs. This feature makes it particularly useful for developers who need to quickly generate boilerplate code or for non-expert users who may not be familiar with specific syntax requirements.
+Cursor \cite{vaithilingam2023towards} is an AI-powered code editor built on Visual Studio Code that offers a range of advanced features, including code completion, refactoring, and natural language-to-code translation. Cursor allows developers to input natural language descriptions of code, which it then translates into functional programming constructs. This feature makes it particularly useful for developers who need to quickly generate boilerplate code or for non-expert users who may not be familiar with specific syntax requirements.
 
 Cursor's integration of natural language processing into the coding process represents a significant advancement in making coding more accessible and efficient. Its refactoring capabilities help developers optimize existing code for better performance or readability, while its natural language-to-code translation empowers even non-technical users to engage in coding tasks.
 
@@ -381,7 +427,7 @@ Its capabilities span various applications, from creative storytelling and adver
 
 \subsubsection{Synthesia}
 
-Synthesia, founded in 2017, is an AI video creation platform known for generating talking-head videos using AI avatars. 
+Synthesia, founded in 2017, is an AI video creation platform known for generating talking-head videos using AI avatars \cite{julia2019use}. 
 The platform allows users to create professional videos in minutes by typing in a script, which the AI avatars then recite. 
 With significant updates in 2023, Synthesia's AI models have improved in delivering more realistic speech patterns, facial expressions, and gestures, making the generated videos more engaging and lifelike.
 
@@ -390,7 +436,7 @@ Its ability to generate videos in multiple languages also makes it an attractive
 
 \subsubsection{Lumen5}
 
-Lumen5, an AI-powered video creation platform founded in 2016, is designed to help users turn text-based content into engaging videos. 
+Lumen5, an AI-powered video creation platform founded in 2016, is designed to help users turn text-based content into engaging videos \cite{volaric2024artificial}. 
 By using natural language processing and machine learning, Lumen5 can automatically create videos from blog posts, articles, or any other written material, offering a seamless way to repurpose content for visual formats.
 
 Continuous updates through 2023 have added new features, such as advanced styling options and AI-enhanced scene selection, further improving the platform's ability to generate visually appealing videos that align with a user's brand and messaging. 
@@ -399,7 +445,7 @@ Its automated workflows reduce the time and expertise required to create profess
 
 \subsubsection{Pictory}
 
-Launched in 2021, Pictory is an AI video generation platform that converts text and images into high-quality videos. 
+Launched in 2021, Pictory is an AI video generation platform that converts text and images into high-quality videos \cite{cho2024sora}. 
 Pictory simplifies the video creation process by allowing users to input text, which the platform then uses to automatically generate video scenes that match the content. 
 Major updates in 2023 introduced new features such as voice-over generation and enhanced AI-driven scene transitions, making it easier for users to create dynamic and polished videos with minimal effort.
 
@@ -408,7 +454,7 @@ The platform's ability to generate videos from blog posts, scripts, and articles
 
 \subsubsection{DeepBrain AI}
 
-DeepBrain AI, founded in 2016, is an AI-driven video synthesis platform known for its AI avatars and video generation capabilities. 
+DeepBrain AI \cite{churchill2018china}, founded in 2016, is an AI-driven video synthesis platform known for its AI avatars and video generation capabilities. 
 With significant enhancements in 2023, DeepBrain AI now offers more lifelike avatar animations and improved lip-sync accuracy, allowing for highly realistic video presentations. 
 The platform allows users to create AI-powered videos by inputting text, which the avatars then narrate in a natural and engaging manner.
 
@@ -417,7 +463,7 @@ Its advanced video synthesis capabilities make it a powerful tool for creating d
 
 \subsubsection{D-ID}
 
-D-ID, founded in 2017, specializes in AI-powered video creation and facial animation. 
+D-ID \cite{garon2023practical}, founded in 2017, specializes in AI-powered video creation and facial animation. 
 Known for its innovative Creative Reality Studio, launched in 2023, D-ID allows users to create videos where static images of people can be animated to speak, blink, or express emotions. 
 This technology is particularly useful for generating personalized content, such as interactive video messages or promotional material featuring virtual characters.
 
@@ -426,7 +472,7 @@ With the rise of deepfake concerns, D-ID's ethical approach to facial animation 
 
 \subsubsection{ModelScope}
 
-ModelScope, a diffusion-based video generation model developed by Alibaba and released in 2023, is designed to create high-quality videos from textual inputs. 
+ModelScope \cite{wang2023modelscope}, a diffusion-based video generation model developed by Alibaba and released in 2023, is designed to create high-quality videos from textual inputs. 
 ModelScope utilizes advanced diffusion techniques to generate coherent video sequences that align with the prompts provided, offering an efficient way to produce video content without the need for traditional video editing tools.
 
 ModelScope's ability to generate videos from text has applications in various industries, including marketing, e-commerce, and social media. 
@@ -434,7 +480,7 @@ By automating the video creation process, ModelScope enables users to produce cu
 
 \subsubsection{Pika Labs}
 
-Pika Labs, launched in 2023, is an AI video generation platform that also employs diffusion models to create video content. 
+Pika Labs \cite{guo2024comparative}, launched in 2023, is an AI video generation platform that also employs diffusion models to create video content. 
 Pika Labs allows users to generate and edit videos by using simple prompts, leveraging the power of AI to automate complex video production tasks. 
 The platform's focus on user-friendly design and rapid video generation makes it an attractive option for creators and businesses alike.
 
@@ -454,7 +500,7 @@ Below are some of the most prominent tools and platforms that are leading the wa
 
 \subsubsection{Whisper}
 
-Released in September 2022 by OpenAI, Whisper is an automatic speech recognition (ASR) system designed to provide highly accurate transcription of spoken language across multiple languages. 
+Released in September 2022 by OpenAI, Whisper \cite{graham2024evaluating} is an automatic speech recognition (ASR) system designed to provide highly accurate transcription of spoken language across multiple languages. 
 Whisper excels in understanding nuanced speech patterns, various accents, and different dialects, making it a powerful tool for transcription, live captioning, and accessibility purposes. 
 Whisper’s multilingual capabilities allow it to transcribe audio from diverse sources, making it a valuable asset for global communication and content creation.
 
@@ -464,7 +510,7 @@ As more industries embrace automation in transcription and audio processing, Whi
 
 \subsubsection{ElevenLabs}
 
-ElevenLabs, founded in 2022, is an AI platform specializing in voice generation and voice cloning, offering some of the most lifelike and customizable synthetic voices available today. 
+ElevenLabs \cite{dewatri2023potential}, founded in 2022, is an AI platform specializing in voice generation and voice cloning, offering some of the most lifelike and customizable synthetic voices available today. 
 ElevenLabs allows users to create AI-generated voices with natural intonation, emotion, and expressiveness, making it a popular choice for applications ranging from audiobook narration to voiceover work for videos and advertisements. 
 In 2023, ElevenLabs introduced major updates that improved its voice cloning capabilities, allowing users to clone a voice from just a few minutes of recorded speech with astonishing accuracy.
 
@@ -494,7 +540,7 @@ The platform’s ease of integration into other tools and services, combined wit
 
 \subsubsection{Speechify}
 
-Speechify, founded in 2016, is a text-to-speech (TTS) platform that has become widely popular for turning written text into high-quality audio. 
+Speechify \cite{chukwuemeka2024artificial}, founded in 2016, is a text-to-speech (TTS) platform that has become widely popular for turning written text into high-quality audio. 
 With major updates in 2023, Speechify has further enhanced its AI-driven voice generation capabilities, offering users an even wider range of voices, languages, and customization options. 
 The platform is designed to make content consumption more accessible, particularly for users with dyslexia, visual impairments, or those who simply prefer listening over reading.
 
@@ -504,7 +550,7 @@ The 2023 updates also improved the platform’s speech rate control and voice mo
 
 \subsubsection{Murf AI}
 
-Murf AI, founded in 2020, is an AI-powered voice generator and text-to-speech platform that has gained significant traction due to its high-quality voice synthesis and ease of use. 
+Murf AI \cite{mohammadkarimi2024exploring}, founded in 2020, is an AI-powered voice generator and text-to-speech platform that has gained significant traction due to its high-quality voice synthesis and ease of use. 
 With significant enhancements in 2023, Murf AI now offers even more realistic voice generation, with voices that can convey subtle emotions and nuances, making the AI-generated voices indistinguishable from human speech.
 
 Murf AI’s platform allows users to generate custom voiceovers from text, which can be used in a variety of applications, from e-learning courses and explainer videos to podcasts and advertisements. 
@@ -525,7 +571,7 @@ Below are some of the key projects and models driving the advancements in this e
 
 \subsubsection{RT-2 (Robotic Transformer 2)}
 
-RT-2, or Robotic Transformer 2, is Google's latest vision-language-action model, published in July 2023 \cite{brohan2023rt}. 
+RT-2 \cite{brohan2023rt}, or Robotic Transformer 2, is Google's latest vision-language-action model, published in July 2023. 
 RT-2 represents a significant milestone in robotics because it merges web-scale knowledge from large language models with robotic control systems. 
 The model enables robots to interpret visual inputs, understand language commands, and convert these into executable actions in real-time. 
 This integration allows RT-2 to perform complex tasks, such as recognizing objects in a scene, understanding instructions, and interacting with the environment accordingly.
@@ -537,7 +583,7 @@ RT-2 has major implications for robotics applications in industries such as manu
 
 \subsubsection{SayCan}
 
-SayCan, published in April 2022 \cite{ahn2022can}, is a method developed by Google to ground large language models in robotic affordances, essentially allowing robots to execute natural language instructions more effectively by understanding their physical capabilities. 
+SayCan \cite{ahn2022can}, published in April 2022, is a method developed by Google to ground large language models in robotic affordances, essentially allowing robots to execute natural language instructions more effectively by understanding their physical capabilities. 
 SayCan works by linking language models, which can interpret and generate human language, with a robot's understanding of its abilities (affordances) in a physical environment. 
 This enables a robot to plan and perform tasks more intelligently, based on what it knows it can do.
 
@@ -546,7 +592,7 @@ By grounding language models in robotic affordances, SayCan helps robots not onl
 
 \subsubsection{PaLM-SayCan}
 
-PaLM-SayCan builds on the SayCan methodology by integrating it with Google's PaLM (Pathways Language Model) to improve robotic planning and execution success rates \cite{chowdhery2022palm}. 
+PaLM-SayCan builds on the SayCan methodology by integrating it with Google's PaLM (Pathways Language Model) to improve robotic planning and execution success rates \cite{ahn2022can}. 
 Announced in July 2022, PaLM-SayCan combines PaLM's robust language understanding capabilities with the affordance-grounding principles of SayCan, enabling more complex task execution by robots. 
 PaLM-SayCan improves the robot's ability to plan multi-step actions and adapt to changes in its environment during task execution.
 
@@ -556,7 +602,7 @@ PaLM-SayCan exemplifies how integrating advanced language models with robotic sy
 
 \subsubsection{ManipLLM}
 
-ManipLLM, published in 2024 \cite{huang2024manip}, is an embodied multimodal large language model designed specifically for object-centric robotic manipulation. 
+ManipLLM, published in 2024 \cite{li2024manipllm}, is an embodied multimodal large language model designed specifically for object-centric robotic manipulation. 
 The model excels at understanding and interacting with objects in complex environments, making it an important tool for robotic systems involved in tasks that require precise and adaptive manipulation of physical objects.
 
 ManipLLM integrates visual, language, and tactile information, allowing robots to handle delicate or intricate tasks that require a deep understanding of the objects involved. 
@@ -565,7 +611,7 @@ ManipLLM has potential applications in manufacturing, where object manipulation 
 
 \subsubsection{PaLM-E}
 
-Published in 2023, PaLM-E is a groundbreaking language model that extends the capabilities of traditional language models by enabling them to directly output continuous robot actions \cite{driess2023palm}. 
+Published in 2023, PaLM-E \cite{driess2023palm} is a groundbreaking language model that extends the capabilities of traditional language models by enabling them to directly output continuous robot actions. 
 PaLM-E bridges the gap between perception, language understanding, and physical action, allowing robots to interpret their surroundings and execute tasks without needing intermediate, pre-programmed steps. 
 This allows for a more seamless interaction between what the robot perceives and how it acts in response to those perceptions.
 
@@ -575,7 +621,7 @@ This model represents a major leap forward in making robots more autonomous, fle
 
 \subsubsection{VoxPoser}
 
-VoxPoser, published in 2023 \cite{liu2023voxposer}, is a system that combines large language models with 3D scene understanding to enable robots to perform tasks involving robotic manipulation in complex environments. 
+VoxPoser \cite{huang2023voxposer}, published in 2023, is a system that combines large language models with 3D scene understanding to enable robots to perform tasks involving robotic manipulation in complex environments. 
 By integrating 3D perception with the language model's reasoning capabilities, VoxPoser allows robots to better understand and interact with their surroundings in a way that is both contextually and spatially aware.
 
 For instance, in a scenario where a robot is asked to "place the vase on the table between the two books," VoxPoser enables the robot to interpret the 3D scene, recognize the positions of the books and the vase, and execute the task accordingly. 
@@ -583,7 +629,7 @@ The system's ability to map language to 3D space allows for more precise object 
 
 \subsubsection{LLM-VLMap}
 
-LLM-VLMap (Large Language Model Visual-Language Mapping), published in 2023 \cite{chen2023llm}, is a framework designed to enable robots to navigate and manipulate objects in their environment by using large language models for visual-language mapping. 
+LLM-VLMap (Large Language Model Visual-Language Mapping), published in 2023 \cite{huang23vlmaps}, is a framework designed to enable robots to navigate and manipulate objects in their environment by using large language models for visual-language mapping. 
 The framework translates complex language commands into actionable steps by associating visual inputs with corresponding actions, allowing robots to navigate spaces and complete tasks based on both visual and verbal instructions.
 
 LLM-VLMap is particularly useful in scenarios where robots need to autonomously navigate large or complex environments, such as warehouses, hospitals, or offices. 
@@ -596,14 +642,14 @@ This progress has the potential to revolutionize industries ranging from manufac
 
 \subsection{DevOps and Infrastructure}
 
-The integration of Multimodal Large Language Models (MLLMs) with DevOps and infrastructure platforms has become essential for facilitating the experimentation, development, and deployment of multimodal applications. 
+The integration of Multimodal Large Language Models (MLLMs) with DevOps \cite{ebert2016devops} and infrastructure platforms has become essential for facilitating the experimentation, development, and deployment of multimodal applications. 
 These platforms enable developers to leverage MLLM capabilities such as audio-to-text, text-to-image, and multimodal input processing at scale. 
 By providing flexible environments and robust tooling, these platforms are driving the innovation of MLLM solutions across industries. 
 Below, we explore key platforms that play a pivotal role in this ecosystem.
 
 \subsubsection{Stack AI}
 
-Stack AI is a versatile platform that, while not exclusively focused on MLLMs, offers valuable support for multimodal models, including functionalities such as audio-to-text, text-to-audio, and text-to-image capabilities. 
+Stack AI is a versatile platform that, while not exclusively focused on MLLMs, offers valuable support for multimodal models, including functionalities such as audio-to-text, text-to-audio, and text-to-image capabilities \cite{waleed2024efficient}. 
 Stack AI provides a dynamic environment where developers can experiment with and deploy multimodal applications, making it an excellent option for those looking to explore the integration of various data modalities within AI workflows.
 
 This platform enables developers to easily combine different input types in MLLM applications, fostering innovation in areas like content generation, speech-to-text applications, and creative design tools. 
@@ -613,7 +659,7 @@ Its versatility in handling multiple data types allows Stack AI to be a strong a
 \subsubsection{Ollama}
 
 Ollama, though not exclusively centered around MLLMs, has become a significant player in this space by supporting Llama 3.2, which includes multimodal models. 
-Ollama provides developers with a platform to run and experiment with MLLMs locally, enabling them to explore the potential of multimodal AI in various applications without relying on cloud-based infrastructure.
+Ollama provides developers with a platform to run and experiment with MLLMs locally, enabling them to explore the potential of multimodal AI in various applications without relying on cloud-based infrastructure \cite{vik2024large}.
 
 By offering local support for Llama 3.2, Ollama enables developers to test models that can process and generate from both visual and textual inputs, making it an ideal tool for use cases where latency and privacy are concerns. 
 For example, a developer building a real-time AI-driven assistant for medical diagnostics could benefit from the local deployment capabilities of Ollama, ensuring that sensitive data is processed securely on-site. 
@@ -621,7 +667,7 @@ With its emphasis on local infrastructure, Ollama is an essential tool for devel
 
 \subsubsection{Hugging Face}
 
-As one of the leading platforms for AI and machine learning, Hugging Face is highly relevant to MLLMs, offering a vast repository of multimodal models and providing a collaborative space for researchers and developers. 
+As one of the leading platforms for AI and machine learning, Hugging Face \cite{jain2022hugging} is highly relevant to MLLMs, offering a vast repository of multimodal models and providing a collaborative space for researchers and developers. 
 Hugging Face has become the go-to platform for developing, hosting, and sharing MLLM applications, enabling easy access to state-of-the-art models and fostering community-driven innovation.
 
 Hugging Face's extensive library includes numerous multimodal models capable of tasks such as image captioning, video generation, and cross-modal translation, making it an invaluable resource for those looking to integrate these capabilities into their projects. 
@@ -630,7 +676,7 @@ Hugging Face's open-source philosophy and active community also provide continua
 
 \subsubsection{Llama Stack}
 
-Llama Stack, developed by Meta, is directly related to the MLLM ecosystem, especially with the release of Llama 3.2, which includes multimodal models capable of visual understanding tasks. 
+Llama Stack \cite{wu2024llama}, developed by Meta, is directly related to the MLLM ecosystem, especially with the release of Llama 3.2, which includes multimodal models capable of visual understanding tasks. 
 Llama Stack provides APIs and components specifically designed to support the development of generative AI applications, making it a powerful tool for building and scaling MLLM solutions.
 
 Llama Stack is particularly valuable for developers creating applications that rely on visual inputs in combination with natural language understanding. 
@@ -660,5 +706,5 @@ In robotics and embodied AI, advancements showcase how MLLMs are enabling robots
 
 In conclusion, MLLMs are not only pushing the boundaries of what AI can achieve but also unlocking new opportunities for businesses, creators, and developers across various fields. The integration of multimodal capabilities into AI systems is ushering in an era where machines can understand, generate, and interact with the world in ways that closely mimic human cognition and creativity. As these technologies continue to evolve, we can expect MLLMs to play an increasingly central role in shaping the future of artificial intelligence, driving innovation, efficiency, and enhanced user experiences across all sectors.
 
-\bibliographystyle{plain}
+\bibliographystyle{unsrt}
 \bibliography{chapter6/chap6_ref}

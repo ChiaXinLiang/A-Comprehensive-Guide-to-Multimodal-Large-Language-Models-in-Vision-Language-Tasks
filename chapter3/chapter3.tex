@@ -4,7 +4,7 @@
 
 
 
-In this chapter, we explore the fundamental components that drive the effectiveness of Vision-Language Models (VLMs), which are at the core of many advanced applications in artificial intelligence. These models are designed to process and integrate multimodal data—specifically, visual (image-based) and linguistic (text-based) inputs. VLMs have become essential in various tasks, such as image captioning, visual question answering (VQA), cross-modal retrieval, and multimodal translation. Their success hinges on several key factors: the ability to encode both images and text into a shared representation, the fusion of these modalities, and the attention mechanisms that help the model focus on the most relevant aspects of the input data.
+In this section, we explore the fundamental components that drive the effectiveness of Vision-Language Models (VLMs), which are at the core of many advanced applications in artificial intelligence. These models are designed to process and integrate multimodal data—specifically, visual (image-based) and linguistic (text-based) inputs. VLMs have become essential in various tasks, such as image captioning, visual question answering (VQA), cross-modal retrieval, and multimodal translation. Their success hinges on several key factors: the ability to encode both images and text into a shared representation, the fusion of these modalities, and the attention mechanisms that help the model focus on the most relevant aspects of the input data.
 
 The first component in VLMs is the visual encoder, responsible for transforming raw image data into a compact, high-dimensional representation that preserves the most critical features of the visual information. This encoder is often a convolutional neural network (CNN) or, more recently, a vision transformer (ViT), which captures spatial relationships and hierarchical structures within an image. Similarly, the textual encoder processes linguistic information, typically using pre-trained language models such as BERT or GPT, which transform text into a set of embeddings that reflect the meaning of words and their contextual relationships.
 
@@ -57,3 +57,6 @@ Attention mechanisms have been transformative in both NLP and vision tasks, and 
     \item \textbf{Hierarchical Attention}: Some models employ hierarchical attention mechanisms, where attention is applied at multiple levels of both the text and the image. For instance, a model might use attention to first select important words in a sentence and then align these with corresponding regions in an image. This hierarchical approach allows for more nuanced understanding and reasoning across modalities.
     \item \textbf{Attention in Pretrained Models}: Pretrained models like CLIP use attention mechanisms during their multimodal pretraining process, learning to match text with corresponding images across a vast dataset. These pretrained attention weights are then used in downstream tasks, making CLIP highly effective at tasks like zero-shot image classification and cross-modal retrieval.
 \end{itemize}
+
+\bibliographystyle{unsrt}
+\bibliography{chapter3/chap3_ref}
